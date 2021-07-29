@@ -18,7 +18,7 @@ Generate a random password of 8 to 128 characters. You may choose to include:
 
 ### Usage
 
-* Visit deployed site: 
+* Visit deployed site: https://anthonypena97.github.io/password-generator/
 
 ## Help
 
