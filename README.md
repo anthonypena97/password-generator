@@ -35,7 +35,7 @@ ex. [anthonypena97](https://github.com/anthonypena97)
     
 * 0.1
     * Initial Release
-    * * See [commit change](https://github.com/anthonypena97/password-generator/commits/main) or See [release history]()
+    * * See [commit change](https://github.com/anthonypena97/password-generator/commits/main) or See [release history](https://github.com/anthonypena97/password-generator/releases/tag/1.0)
 
 ## Acknowledgments
 
