@@ -2,7 +2,8 @@
 
 Simple password application written in Javascript, HTML, and CSS .
 
-https://user-images.githubusercontent.com/79285555/127539833-45810ce0-cb7c-4c5f-bdd2-57067412fc86.mov
+![password-generator_example](https://user-images.githubusercontent.com/79285555/127540315-4e8d83b4-5c51-4628-9e8c-c964f1be112a.gif)
+
 
 ## Description
 
