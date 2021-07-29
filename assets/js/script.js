@@ -6,21 +6,8 @@ var numericChars = '0123456789';
 var specialChars = '!"#$%&()*+,-.[/:;<=>?@]^_`{|}~' + "'" + '\\';
 
 var length = '';
-
-// var possible = lowercaseChars + uppercaseChars + numericChars + special_characters;
 var possible = '';
-
 var password = '';
-
-// console.log(possible);
-
-// var passwordCriteria = {
-//   length: 'length',
-//   lowercase: 'lowercase',
-//   uppercase: 'uppercase',
-//   numeric: 'numeric',
-//   special_characters: 'special_characters'
-// };
 
 function generatePassword() {
   // VALIDATE ALL ANSWERS AND ONE CHARACTER TYPE SHOULD 
@@ -36,9 +23,6 @@ function generatePassword() {
   for (var i = 0; i < length; i++) {
     password += possible.charAt(Math.floor(Math.random() * possible.length));
   };
-
-  // display code
-  console.log(password)
 
   return password;
 
@@ -77,16 +61,12 @@ function generatePasswordCharacters() {
     i++
   };
 
-  // passwordCriteria.lowercase = passwordLowercase;
-
   // uppercase?
   var passwordUppercase = window.confirm("Would you like to include uppercase characters?");
   if (passwordUppercase) {
     possible += uppercaseChars
     i++
   };
-
-  // passwordCriteria.uppercase = passwordUppercase;
 
   // numeric?
   var passwordNumeric = window.confirm("Would you like to include numeric characters?");
@@ -95,16 +75,12 @@ function generatePasswordCharacters() {
     i++
   };
 
-  // passwordCriteria.numeric = passwordNumeric;
-
   // special characters?
   var passwordSpecialCharacters = window.confirm("Would you like to include special characters?");
   if (passwordSpecialCharacters) {
     possible += specialChars;
     i++
   };
-
-  // passwordCriteria.special_characters = passwordSpecialCharacters;
 
   if (i === 0) {
     window.alert("You must choose atleast one type of password character!!!")
