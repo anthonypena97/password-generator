@@ -16,30 +16,13 @@ Generate a random password of 8 to 128 characters. You may choose to include:
 
 ## Getting Started
 
-### Dependencies
+### Usage
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Visit deployed site: 
 
 ## Help
 
 Contact anthony.e.p3na@gmail.com with any issues
-```
-command to run if program contains helper info
-```
 
 ## Authors
 
@@ -52,9 +35,10 @@ ex. [anthonypena97](https://github.com/anthonypena97)
     
 * 0.1
     * Initial Release
-    * * See [commit change]() or See [release history]()
+    * * See [commit change](https://github.com/anthonypena97/password-generator/commits/main) or See [release history]()
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 * [spotify_web_api_auth](https://github.com/spotify/web-api-auth-examples)
+* [README-Template.md](https://gist.github.com/DomPizzie/7a5ff55ffa9081f2de27c315f5018afc)
