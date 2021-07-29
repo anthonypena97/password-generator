@@ -1,9 +1,10 @@
 // Assignment code here
-
-var lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
-var uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-var numericChars = '0123456789';
-var specialChars = '!"#$%&()*+,-.[/:;<=>?@]^_`{|}~' + "'" + '\\';
+var criteria = {
+  lowercaseChars: 'abcdefghijklmnopqrstuvwxyz',
+  uppercaseChars: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
+  numericChars: '0123456789',
+  specialChars: '!"#$%&()*+,-.[/:;<=>?@]^_`{|}~' + "'" + '\\'
+};
 
 var length = '';
 var possible = '';
@@ -19,7 +20,7 @@ function generatePassword() {
   // generate password characters
   generatePasswordCharacters();
 
-  // generate password from criteria
+  // generate password from compiled possible string
   for (var i = 0; i < length; i++) {
     password += possible.charAt(Math.floor(Math.random() * possible.length));
   };
@@ -57,28 +58,28 @@ function generatePasswordCharacters() {
   // lowercase?
   var passwordLowercase = window.confirm("Would you like to include lowercase characters?");
   if (passwordLowercase) {
-    possible += lowercaseChars
+    possible += criteria.lowercaseChars
     i++
   };
 
   // uppercase?
   var passwordUppercase = window.confirm("Would you like to include uppercase characters?");
   if (passwordUppercase) {
-    possible += uppercaseChars
+    possible += criteria.uppercaseChars
     i++
   };
 
   // numeric?
   var passwordNumeric = window.confirm("Would you like to include numeric characters?");
   if (passwordNumeric) {
-    possible += numericChars
+    possible += criteria.numericChars
     i++
   };
 
   // special characters?
   var passwordSpecialCharacters = window.confirm("Would you like to include special characters?");
   if (passwordSpecialCharacters) {
-    possible += specialChars;
+    possible += criteria.specialChars;
     i++
   };
 
